@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="degradar">
+
+    <header>
+        <div>
+            <h1><img src="imagenes/Logo.png" alt="Logo de alura letra A"></h1>
+        </div>
+    </header>
+
+
+    <main>
+        <section>
+            <textarea class="ingresarTxt" type="text" id="encriptarVocal" placeholder="Indroduzca su texto"></textarea>
+        </section>
+
+        <section>
+            <h2 class="ninoBuscador" id="busca"> <img src="imagenes/Muñeco.png" alt="Imagen de un niño buscando"></h2>
+            <div id="alinearDiv">
+                <p id="p3" class="parrafo">Ningun mensaje fue encontrado</p>
+                <textarea readonly type="text" id="desencriptaV" placeholder=""></textarea>
+            </div>
+
+            <button id="bottonCopy" onclick="clipboard()"><img src="imagenes/pegar.png" class="bottonImagen"></button>
+        </section>
+
+        <section class="botones">
+            <button class="botEncrip" onclick="encriptarVocal()">Encriptar</button>
+            <button class="botDesencrip" onclick="desencriptaV()">Desencriptar</button>
+        </section>
+
+        <section class="rectangulo">
+
+        </section>
+
+    </main>
+</body>
+
+<footer class="footer">
+    <p2 class="footer__texto">Crimadro &copy</p2>
+</footer>
+
+<script src="js/CreandoEncriptacion.js"></script>
+
+</html>
+
